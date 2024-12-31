@@ -11,7 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.5;
@@ -75,10 +75,9 @@
 
         .profile-slogan {
             text-align: center;
-            font-size: 18px;
+            font-size: 20px;
             color: #333;
             font-weight: 500;
-            margin-bottom: 20px;
         }
 
         /* Card Styles */
@@ -102,8 +101,9 @@
         }
 
         .block-icon {
-            width: 48px;
-            height: 48px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
             flex-shrink: 0;
         }
 
@@ -113,41 +113,38 @@
 
         /* Typography */
         h1 {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 700;
             color: #7C9082;
         }
 
         h2 {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             color: #7C9082;
         }
 
         p {
-            font-size: 16px;
+            font-size: 18px;
             margin-bottom: 15px;
             color: #555;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
-        /* List Styles */
-        ul {
-            list-style-type: none;
-            margin: 15px 0;
+        /* Link Styles */
+        .read-more {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
         }
 
-        li {
-            margin-bottom: 10px;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        li:before {
-            content: "•";
-            color: #7C9082;
-            position: absolute;
-            left: 0;
+        .read-more:hover {
+            text-decoration: underline;
         }
 
         /* Button Styles */
@@ -166,28 +163,12 @@
             background: #6b7c70;
         }
 
-        /* Social Links */
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .social-links a {
-            color: #7C9082;
-            text-decoration: none;
-        }
-
-        .social-links a:hover {
-            color: #6b7c70;
-        }
-
         /* Footer */
         .footer {
             text-align: center;
             padding: 40px 20px;
             color: #666;
-            font-size: 14px;
+            font-size: 16px;
         }
 
         /* Mobile Optimization */
@@ -195,7 +176,7 @@
             .container {
                 padding: 15px;
             }
-            
+
             .profile-section {
                 padding: 40px 10px;
             }
@@ -206,16 +187,20 @@
             }
 
             .block-icon {
-                width: 40px;
-                height: 40px;
+                width: 45px;
+                height: 45px;
             }
 
             h1 {
-                font-size: 22px;
+                font-size: 24px;
             }
 
             h2 {
-                font-size: 18px;
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
             }
         }
     </style>
@@ -247,8 +232,8 @@
                 <img src="images/about.png" alt="About Us" class="block-icon">
                 <div class="block-content">
                     <h2>About Us</h2>
-                    <p>At Purely Mindful, we turn cleaning into a moment of peace and joy. Say goodbye to worries about harmful chemicals—our products are safe for your family, pets, and the planet. With every spray, you'll feel the comfort of knowing your home is clean and cared for, naturally.</p>
-                    <a href="about.html" style="color: #0066cc; text-decoration: none;">Read more...</a>
+                    <p>At Purely Mindful, we turn cleaning into a moment of peace and joy. Say goodbye to worries about harmful chemicals—our products are safe for your family, pets, and the planet.</p>
+                    <a href="about.html" class="read-more">Read more...</a>
                 </div>
             </div>
         </section>
@@ -259,7 +244,8 @@
                 <img src="images/products.png" alt="Our Products" class="block-icon">
                 <div class="block-content">
                     <h2>What We Offer</h2>
-                    <p>We offer 16 oz all-purpose spray cleaners in reusable glass bottles and 32 oz refill bottles, all made with natural ingredients and zero harmful chemicals. Infused with essential oils, our products make every clean a fresh and calming experience.</p>
+                    <p>We offer 16 oz all-purpose spray cleaners in reusable glass bottles and 32 oz refill bottles, all made with natural ingredients and zero harmful chemicals.</p>
+                    <a href="what-we-offer.html" class="read-more">Read more...</a>
                 </div>
             </div>
         </section>
@@ -270,7 +256,8 @@
                 <img src="images/whyus.png" alt="Why Choose Us" class="block-icon">
                 <div class="block-content">
                     <h2>Why Choose Us</h2>
-                    <p>We truly care about your health, the well-being of your loved ones, and the world we all share. Our products are made to keep your home safe, your family happy, and the environment healthy.</p>
+                    <p>We truly care about your health, the well-being of your loved ones, and the world we all share. Our products are made to keep your home safe and your family happy.</p>
+                    <a href="why-choose-us.html" class="read-more">Read more...</a>
                 </div>
             </div>
         </section>
@@ -281,12 +268,8 @@
                 <img src="images/pricing.png" alt="Pricing" class="block-icon">
                 <div class="block-content">
                     <h2>Our Pricing</h2>
-                    <p>Keep your home clean and safe without overspending:</p>
-                    <ul>
-                        <li>16 oz glass spray cleaner: $8</li>
-                        <li>32 oz refill bottle: $12</li>
-                    </ul>
-                    <p>Affordable, natural, and worry-free!</p>
+                    <p>Keep your home clean and safe without overspending. Our products are affordably priced with options for both spray bottles and money-saving refills.</p>
+                    <a href="pricing.html" class="read-more">Read more...</a>
                 </div>
             </div>
         </section>
@@ -298,6 +281,7 @@
                 <div class="block-content">
                     <h2>Customer Reviews</h2>
                     <p>Don't just take our word for it—see what our happy customers are saying! Check out our glowing reviews on Google and join the many who love Purely Mindful.</p>
+                    <a href="reviews.html" class="read-more">Read more...</a>
                 </div>
             </div>
         </section>
@@ -308,7 +292,8 @@
                 <img src="images/delivery.png" alt="Delivery" class="block-icon">
                 <div class="block-content">
                     <h2>Where to Find Us</h2>
-                    <p>We're proud to call Orlando, Florida, home, and we're here to serve you wherever you are. We ship across North, Central, and South America, bringing our natural cleaning solutions right to your doorstep!</p>
+                    <p>We're proud to call Orlando, Florida, home, and we're here to serve you wherever you are. We ship across North, Central, and South America.</p>
+                    <a href="location.html" class="read-more">Read more...</a>
                 </div>
             </div>
         </section>
@@ -319,12 +304,8 @@
                 <img src="images/contact.png" alt="Contact" class="block-icon">
                 <div class="block-content">
                     <h2>Get in Touch</h2>
-                    <p>We'd love to hear from you! Text us at 888-888-8888 or send us a message on our social media.</p>
-                    <div class="social-links">
-                        <a href="#instagram">Instagram</a>
-                        <a href="#facebook">Facebook</a>
-                        <a href="#x">X</a>
-                    </div>
+                    <p>We'd love to hear from you! Text us at 888-888-8888 or send us a message on our social media. We're here to help with any questions or orders.</p>
+                    <a href="contact.html" class="read-more">Read more...</a>
                 </div>
             </div>
         </section>
