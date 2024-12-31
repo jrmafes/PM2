@@ -18,46 +18,34 @@
             color: #333;
             background-color: #f7f7f7;
         }
-
+        
         /* Dark Mode Styles */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212;
-        color: #e0e0e0;
-    }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000;
+                color: #fff;
+            }
 
-    .header, .profile-section, .card {
-        background-color: #1e1e1e;
-    }
+            .header, .profile-section, .card {
+                background-color: #101010;
+            }
 
-    .header {
-        border-bottom-color: #333;
-    }
+            .header {
+                border-bottom-color: #333;
+            }
 
-    h1, h2 {
-        color: #9CB4A8;  /* lighter version of our sage green */
-    }
+            h1, h2, p {
+                color: #fff;
+            }
 
-    p {
-        color: #e0e0e0;
-    }
+            .social-links a {
+                color: #fff;
+            }
 
-    .content-section, .card {
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-
-    .footer {
-        color: #888;
-    }
-
-    .social-links a {
-        color: #9CB4A8;
-    }
-
-    .social-links a:hover {
-        color: #7C9082;
-    }
-}        
+            .social-links a:hover {
+                color: #7C9082;
+            }
+        }
 
         /* Container Layout */
         .container {
