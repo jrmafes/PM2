@@ -11,13 +11,53 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.5;
             color: #333;
             background-color: #f7f7f7;
         }
+
+        /* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    .header, .profile-section, .card {
+        background-color: #1e1e1e;
+    }
+
+    .header {
+        border-bottom-color: #333;
+    }
+
+    h1, h2 {
+        color: #9CB4A8;  /* lighter version of our sage green */
+    }
+
+    p {
+        color: #e0e0e0;
+    }
+
+    .content-section, .card {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .footer {
+        color: #888;
+    }
+
+    .social-links a {
+        color: #9CB4A8;
+    }
+
+    .social-links a:hover {
+        color: #7C9082;
+    }
+}        
 
         /* Container Layout */
         .container {
